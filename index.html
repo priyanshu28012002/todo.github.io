@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        /* Navbar styling */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Page content styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .form-control:focus {
+            border-color: #333;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .todo-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .todo-item span {
+            flex: 1;
+        }
+
+        .todo-item button {
+            background-color: #18dd18;
+            margin-left: 100px;
+            border: none;
+            padding: 4px;
+            color: rgb(233, 233, 233);
+            cursor: pointer;
+            outline: none;
+        }
+
+        .todo-item button:hover {
+            background-color: #b02a37;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav>
+    <a href="/">Home</a>
+    <a href="/">Contact</a>
+    <a href="/">About</a>
+    <a href="/">Todo</a>
+</nav>
+
+<!-- Page content -->
+<div class="container">
+    <div class="header">Task Todo</div>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Add a new task" id="userInput">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="submitTodo">Add</button>
+        </div>
+    </div>
+    <ul class="todo-list" id="todo-list">
+    </ul>
+</div>
+</body>
+<script src="/index.js"></script>
+</html>
